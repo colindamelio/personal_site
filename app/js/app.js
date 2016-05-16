@@ -23,6 +23,17 @@ $(function () {
 
 });
 
+// dayNnight
+var date = 	new Date();
+var time = date.getHours();
+var imgToChange = $('.profile');
+
+if (time >= 22 && time <= 8) {
+	imgToChange.attr('src', '/images/sleepycolin.png');
+} else {
+	imgToChange.attr('src', '/images/colin.png');
+}
+
 // copyright update
 document.getElementById('year').innerHTML = new Date().getFullYear()
 

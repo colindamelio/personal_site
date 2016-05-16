@@ -12,11 +12,11 @@ $primary-font: 'Open Sans', sans-serif;
 html {font-size: 62.5%;}
 body {font-size: 1.4rem; background-color: #FCFBFA}
 a{color: #0060B6;text-decoration: none; cursor: pointer; border: none;}
-a:hover{color: #00A0C6;cursor: pointer;}
+a:hover{color: #00A0C6; cursor: pointer;}
 ul {padding: 0; list-style: none;}
 div.container {
 	width: 90%;
-	max-width: 1440px; 
+	max-width: 1440px;
 	margin: 0 auto;
 	background: $background-color;
 	border: 1px solid #F0F0F0;
@@ -33,16 +33,15 @@ div.centering-div {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;	
+	height: 100vh;
 	div.img-wrapper {
 		text-align: center;
 		@include bp-landscape {}
 		img {
-			border-radius: 50%;
 			width: 50%;
 		}
 	}
-	
+
 	div.text-wrapper {
 		width: 80%;
 		max-width: 500px;
@@ -77,12 +76,14 @@ div.centering-div {
 					}
 				}
 			}
-		}	
+		}
 	}
 }
 
-// COPYRIGHT
+// copyright
 small.copy {
 	display: block;
+	font-family: $primary-font;
 	text-align: center;
+	padding-bottom: 10px;
 }
